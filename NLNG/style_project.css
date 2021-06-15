@@ -33,6 +33,17 @@ ul {
 li {
   float: left;
 }
+li a{
+  font-family: "Knockout 70 A", "Knockout 70 B", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -5px 1% 0 0;
+  padding: 0;
+  font-size: 18pt;
+  line-height: 16pt;
+}
 
 li a {
   display: block;
@@ -45,7 +56,7 @@ li a {
   border: none;
   color: white;
   padding: 12px 16px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
 }
 body, html {
@@ -142,6 +153,20 @@ body, html {
 }
 */
 
+.btn_sub {
+  color: white;
+  background-color: red;
+  align-items: center;
+  border: none;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 500px;
+}
+
+
+/*ABOUT ME SECTION*/
 p {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
