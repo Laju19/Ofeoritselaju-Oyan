@@ -1,0 +1,45 @@
+#nav-bar{
+    background-color: #E5E4E2;
+    padding: 10pt;
+}
+#nav-bar img {
+    margin-left: -12px;
+    margin-top: -9px;
+} 
+
+#nav-bar .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+#menu-bar { /*MOVE MENUE BAR CLOSER TO NAV BAR*/
+    margin-top: 0;
+}
+#menu-bar ul {
+    background-color: green;
+    align-items: center;
+    display: flex;
+    
+}
+
+#menu-bar ul li {
+        padding: 10pt;
+        list-style: none;  
+}
+
+#menu-bar ul li a {
+    text-decoration: none; 
+    cursor: pointer;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#menu-bar ul li a:hover {
+    padding: 10pt;
+    background: #0096FF;
+
+}
