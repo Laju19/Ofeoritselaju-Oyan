@@ -1,20 +1,21 @@
 <!--REQUIREMENTS
 1. POP UP FOR TIMER
-2. DIV for share and follow
-3. nav bar for logo and search bar
+2. style first dropdown
+2. second drop down bar for menu bar
+3. design 2nd drop down bar 
 4. menu bar
 5. Use 3 bar pic from personal laptop (maybe)
 6. News feed, moving
 7. Pics moving (donwload from online)
 8. 2nd menu bar, get pics from google
 9. use div abd css flex for the 3 column part
-10. footer: Copyright, Terms and condition, privacy policy -->
+10.footer: Copyright, Terms and condition, privacy policy -->
 
 <!DOCtype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style_home.css">
     </head>
@@ -24,6 +25,11 @@
             <nav>
                 <img src="logo.png" alt="NLNG logo">
                 <a href="#" class="fa fa-mail"></a>
+
+                <form class="example" action="/action_page.php" style="margin-right:-10px; max-width:250px">
+                    <input type="text" placeholder="Search.." name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
                 
             </nav>
         </div>
@@ -31,15 +37,124 @@
         <div id="menu-bar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                
+                <div class="dropdown">
+                <li><a href="#">
+                        <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button></a>
+                        <div class="dropdown-content">
+                            <a href="#">Board of Directors</a>
+                            <a href="#">Facts & Figures</a>
+                            <a href="#">Annual Reports</a>
+                            <a href="#">Our location</a>
+                            <a href="#">Templates</a>
+                            <a href="#">Mission & Vision</a>
+                        </div>     
+                </li></div>
                 <li><a href="#">Quality Management System</a></li>
-                <li><a href="#">Division</a></li>
-                <li><a href="#">Comms Central</a></li>
+                <div class="dropdown">
+                    <li><a href="#">
+                        <button class="dropbtn"> Division <i class="fa fa-caret-down"></i></button></a>
+                        <div class="dropdown-content">
+                            <a href="#">MD</a>
+                            <a href="#">CM</a>
+                            <a href="#">CS</a>
+                            <a href="#">DD</a>
+                            <a href="#">ER</a>
+                            <a href="#">FN</a>
+                            <a href="#">HR</a>
+                            <a href="#">LG</a>
+                            <a href="#">NSML</a>
+                            <a href="#">PD</a>
+                            <a href="#">TD</a>
+                        </div>
+                        </li>
+                </div>
+
+                <div class="dropdown">
+                <li><a href="#">
+                    <button class="dropbtn"> Comms Central <i class="fa fa-caret-down"></i></button></a>
+                    <div class="dropdown-content">
+                        <a href="#">Connect</a>
+                        <a href="#">NLNG, The Magazine</a>
+                        <a href="#">Other Publications</a>
+                        <a href="#">Today's Headlines</a>
+                        <a href="#">Events/Photo Stories</a>
+                    </div>
+                </li></div>
+
                 <li><a href="#">Content Management Services</a></li>
-                <li><a href="#">User Directory</a></li>
+
+                <div class="dropdown">
+                <li><a href="#">
+                    <button class="dropbtn"> User Directory <i class="fa fa-caret-down"></i></button></a>
+                    <div class="dropdown-content">
+                        <a href="#">Telephone Directory</a>
+                        <a href="#">IPT Self-Service Portal</a>
+                    </div>
+                </li></div>
+
                 <li><a href="#">Discussion Forum</a></li>
             </ul>
         </div>
 
+        <div id="newsfeed">
+            <div class="row">
+                <div class="column" style="color: green; background-color:#E5E4E2;">
+                    <p> <span style="color: green;"> <strong> NEWS FEED </strong> </span>  
+                        <a href="#" style="color: black; text-decoration: none;"> <marquee width="60%" direction="left" scrollamount="3"> Our Vision: a global LNG company helping to build better Nigeria.</a>
+                        <span style="color: red;">&ensp; *** &ensp;</span>
+
+                        <a href="#" style="color: black; text-decoration: none;"> Our Vision: a global LNG company helping to build better Nigeria.</a>
+                            <span style="color: red;"> &ensp; *** &ensp; </marquee></span>
+                    </p>
+                    
+                </div>
+                <div class="column" style="color: green; background-color:#E5E4E2;">
+                    <p> <span style="color: green;"> <strong> EVENTS </strong> </span>  
+                        <a href="#" style="color: black; text-decoration: none;"> <marquee width="60%" direction="left" scrollamount="3"> T7 Nigerian Content Plan Signing</a>
+                        <span style="color: red;"> &ensp;***&ensp;</span>
+
+                        <a href="#" style="color: black; text-decoration: none;"> T7 Nigerian Content Plan Signing</a>
+                            <span style="color: red;"> &ensp;***&ensp;</marquee></span>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pictureslide">
+              <div class="mySlides">
+                <img src="img1.jfif" style="width:100%">
+                <div class="slidetext">
+                    Launch of DLNG
+                </div>
+              </div>
+              
+              <div class="mySlides">
+                <img src="img2.jpg" style="width:100%">
+                <div class="slidetext">
+                    CHO Commissioning: Governor Wike cutting the tape to mark the official opening of NLNG's Corporate Head Office
+                </div>
+              </div>
+              
+              <div class="mySlides">
+                <img src="img3.jfif" style="width:100%">
+                <div class="slidetext">
+                    CHO Commissioning: Governor Wike, HRM, BoD, EM and SMT members after the unveiling of the plaque to mark the official opening of NLNG's Corporate Head Office
+                </div>
+              </div>
+              
+              <div class="mySlides">
+                <img src="img4.jfif" style="width:100%">
+                <div class="slidetext">
+                    NLNG signs GMoU with CHO and GTS Clusters
+                </div>
+              </div>
+              
+
+            <button class="change-button" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="change-button" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script src="js_home.js"></script>
     </body>
 </html>
