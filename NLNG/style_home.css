@@ -126,3 +126,20 @@ clear: both;
     bottom: 8px;
     left: 16px;
   }
+
+#pictureslide .change-button {
+    color: #E5E4E2;
+    border: none;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: grey;
+  }
+
+#pictureslide .change-button:hover {
+    background-color: gray;
+    color: black;
